@@ -1,6 +1,6 @@
 const express = require("express");
-const { ProjectModel } = require("../model/projectModel");
-const { UserModel } = require("../model/userModel");
+const { ProjectModel } = require("../Model/projectModel");
+const { UserModel } = require("../Model/UserModel");
 const projectRouter = express.Router();
 
 //Logic to Fetch Files of a Project

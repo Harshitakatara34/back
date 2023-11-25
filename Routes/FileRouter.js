@@ -1,7 +1,7 @@
 const express = require("express");
-const { ProjectModel } = require("../model/projectModel");
-const { FileModel } = require("../model/fileModel");
-const { UserModel } = require("../model/userModel");
+const { ProjectModel } = require("../Model/projectModel");
+const { FileModel } = require("../Model/FileModel");
+const { UserModel } = require("../Model/UserModel");
 const fileRouter = express.Router();
 
 // Creating new file

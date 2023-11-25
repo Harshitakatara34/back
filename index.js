@@ -3,10 +3,10 @@ const express = require("express");
 
 const cors = require("cors");
 const { connection } = require("./databaseConnection");
-const { userRouter } = require("./routes/userRouter");
-const { projectRouter } = require("./routes/projectRouter");
-const { fileRouter } = require("./routes/fileRouter");
-const { authMiddleware } = require("./middleware/AuthMiddleware");
+const { userRouter } = require("./Routes/userRouter");
+const { projectRouter } = require("./Routes/projectRouter");
+const { fileRouter } = require("./Routes/fileRouter");
+const { authMiddleware } = require("./Middleware/AuthMiddleware");
 require("dotenv").config();
 const app = express();
 
