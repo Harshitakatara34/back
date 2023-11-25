@@ -14,7 +14,10 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.0.1",
+  
+      "mongoose": "7.11.4",  // Specify an older version that supports Node.js 14
+   
+    
     "nodemon": "^3.0.1"
   }
 }
