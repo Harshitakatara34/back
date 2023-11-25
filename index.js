@@ -5,7 +5,7 @@ const cors = require("cors");
 const { connection } = require("./databaseConnection");
 const { userRouter } = require("./Routes/userRouter");
 const { projectRouter } = require("./Routes/projectRouter");
-const { fileRouter } = require("./Routes/fileRouter");
+const { fileRouter } = require("./Routes/FileRouter");
 const { authMiddleware } = require("./Middleware/AuthMiddleware");
 require("dotenv").config();
 const app = express();
