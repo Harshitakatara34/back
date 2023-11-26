@@ -23,7 +23,7 @@ userRouter.post("/", async (req, res) => {
     // Create a new user if it doesn't exist
     const newUser = await UserModel.create({ email });
     const tokenAtSignup = jwt.sign({ email }, "harshi", { expiresIn: "8h" });
-
+console.log(tokenAtSignup)
     res.status(201).send({
       msg: "New User Created",
       existingUser: newUser,

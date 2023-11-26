@@ -6,11 +6,12 @@ const projectRouter = express.Router();
 //Logic to Fetch Files of a Project
 projectRouter.get("/:projectId", async (req, res) => {
   try {
+    
     const { projectId } = req.params;
-
+    console.log(projectId)
     // Find the project and populate its files
     const project = await ProjectModel.findById(projectId).populate("files");
-
+console.log(project)
     if (!project) {
       return res.status(404).send({ message: "Project not found" });
     }
